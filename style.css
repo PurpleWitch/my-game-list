@@ -1,4 +1,5 @@
 body{
+    background-repeat: no-repeat;
     background-color: aqua;
     min-height: 100vh;
 }
