@@ -4,4 +4,6 @@ html,body{
     background-attachment: fixed;
     background-color: aqua;
     min-height: 100vh;
+    display: flex;
 }
+
