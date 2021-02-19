@@ -9,3 +9,5 @@ import datetime
 import bcrypt
 import json
 import os
+
+app=Flask(__name__)
