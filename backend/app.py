@@ -8,6 +8,7 @@ from os import environ
 import datetime
 import bcrypt
 import json
+import db
 import os
 
 app=Flask(__name__)
