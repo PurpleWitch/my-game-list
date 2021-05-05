@@ -1,2 +1,2 @@
-# my-game-list
-website to list gaming
+# My Game List
+My Anime List replica but for games
