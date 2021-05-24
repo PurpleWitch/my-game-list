@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 
 export default class Navbar extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            user:""
+        }
+    }
     componentDidMount(){
         this.setState({user:localStorage.getItem("user")})
     }
@@ -9,7 +15,7 @@ export default class Navbar extends Component {
             <div className="col">
             <div className="row">
                 <div className="menuitem">My Game List</div>
-                {this.state.user?<div>user</div>:<div>Sign</div>}
+                {this.state.user?<div className="menuitem">user</div>:<div className="menuitem">Sign</div>}
             </div>
             <div className="row">
                 <div className="menuitem">Online</div>
