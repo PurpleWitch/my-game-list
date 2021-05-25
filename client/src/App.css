@@ -1,5 +1,6 @@
 body{
-    min-height: 99vh;
+    min-height: 97vh;
+    font-size:3vh;
 }
 .row{
     display: flex;
@@ -12,4 +13,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+}
+.menuitem{
+    padding:1vh;
+    border:1vh blue solid;
+    margin:1vh
+}
+.menuitem:hover{
+    border:1vh red solid;
 }
