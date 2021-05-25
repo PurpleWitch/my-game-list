@@ -12,19 +12,16 @@ export default class Navbar extends Component {
     }
     render() {
         return (
-            <div className="col">
             <div className="row">
-                <div className="menuitem">My Game List</div>
-                {this.state.user?<div className="menuitem">user</div>:<div className="menuitem">Sign</div>}
-            </div>
-            <div className="row">
-                <div className="menuitem">Online</div>
-                <div className="menuitem">Offline</div>
+                <div className="menuitem">Top</div>
+                <div className="menuitem">Categories</div>
                 <div className="menuitem">Community</div>
                 <div className="menuitem">Download</div>
                 <div className="menuitem">Play</div>
                 <div className="menuitem">Search</div>
-            </div>
+                <input type="text"/>
+                {this.state.user?<div className="menuitem">My List</div>:<></>}
+                {this.state.user?<div className="menuitem">User</div>:<div className="menuitem">Sign</div>}
             </div>
         )
     }
