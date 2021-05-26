@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
     constructor(props){
@@ -10,18 +11,42 @@ export default class Navbar extends Component {
     componentDidMount(){
         this.setState({user:localStorage.getItem("user")})
     }
+    sign=()=>{
+
+    }
     render() {
         return (
             <div className="row">
-                <div className="menuitem">Top</div>
-                <div className="menuitem">Categories</div>
-                <div className="menuitem">Community</div>
-                <div className="menuitem">Download</div>
-                <div className="menuitem">Play</div>
-                <div className="menuitem">Search</div>
-                <input type="text"/>
-                {this.state.user?<div className="menuitem">My List</div>:<></>}
-                {this.state.user?<div className="menuitem">User</div>:<div className="menuitem">Sign</div>}
+                <Link to="/">
+                    <input type="button" value="Home"/>
+                </Link>
+                <Link to="/List">
+                    <input type="button" value="List"/>
+                </Link>
+                <Link to="/Categories">
+                    <input type="button" value="Categories"/>
+                </Link>
+                <Link to="/Community">
+                    <input type="button" value="Community"/>
+                </Link>
+                <Link to="/Download">
+                    <input type="button" value="Download"/>
+                </Link>
+                <Link to="/Play">
+                    <input type="button" value="Play"/>
+                </Link>
+                <Link to="/Suggest">
+                    <input type="button" value="Suggest"/>
+                </Link>
+                <Link to="/Search">
+                    <input type="button" value="Search"/>
+                </Link>
+                <Link to="/My">
+                    {this.state.user?<input type="button" value="My List"/>:<></>}
+                </Link>
+                <Link to="/Sign">
+                    {this.state.user?<input type="button" value="Profile"/>:<input type="button" onClick={this.sign} value="Sign"/>}
+                </Link>
             </div>
         )
     }
