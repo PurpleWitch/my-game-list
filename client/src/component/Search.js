@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import $ from 'jquery';
 
 export default class Search extends Component {
@@ -10,10 +10,17 @@ export default class Search extends Component {
             })
         })
     }
+    search=(event)=>{
+        event.preventDefault()
+        var query=event.target.previousSibling.value
+        //search from db/games
+    }
     render() {
         return (
-            <div class="container">
-                <input type="text"/><input type="button" value="Search"/>
+            <div className="container">
+                <form>
+                    <input type="text"/><input type="submit" value="Search" onClick={this.search}/>
+                </form>
             </div>
         )
     }
