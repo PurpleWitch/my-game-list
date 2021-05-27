@@ -20,8 +20,20 @@ body{
     align-items:center;
     justify-content:center;
 }
+.half{
+    min-width: 48vw;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
 .third{
     min-width: 32vw;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+.quarter{
+    min-width: 23vw;
     display:flex;
     align-items:center;
     justify-content:flex-start;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import $ from 'jquery';
 
 export default class Suggest extends Component {
