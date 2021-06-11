@@ -7,6 +7,10 @@ import Profile from './Profile.js';
 import Suggest from './Suggest.js';
 import Search from './Search.js';
 import Navbar from './Navbar.js';
+import Videos from './Videos.js';
+import Images from './Images.js';
+import Forums from './Forums.js';
+import Chat from './Chat.js';
 import List from './List.js';
 import Play from './Play.js';
 import Sign from './Sign.js';
@@ -33,6 +37,10 @@ export default class App extends Component {
             <Route path="/Sign" component={Sign}/>
             <Route path="/List" component={List}/>
             <Route path="/Play" component={Play}/>
+            <Route path="/Chat" component={Chat}/>
+            <Route path="/Videos" component={Videos}/>
+            <Route path="/Images" component={Images}/>
+            <Route path="/Forums" component={Forums}/>
             <Route path="/Search" component={Search}/>
             <Route path="/Profile" component={Profile}/>
             <Route path="/Suggest" component={Suggest}/>
