@@ -11,5 +11,4 @@ My Anime List replica but for games
 - Rami Okkeh
 - Noor Ashqar
 
-asd
 
