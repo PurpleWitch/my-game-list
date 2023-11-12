@@ -12,3 +12,4 @@ My Anime List replica but for games
 - Noor Ashqar
 
 
+herp
